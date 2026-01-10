@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*element selector*/
+        /*     <!-- div {
+            background-color: red;
+        }  -->*/
+
+        /*CLASS SELECTOR*/
+        .red {
+            /*.red means class red*/
+            background-color: red;
+        }
+
+        /*id SELECTOR*/
+        #green {
+            background-color: green;
+        }
+
+        /* Child selectors*/
+
+        div>p {
+            color: rgb(91, 91, 216);
+            background-color: rgb(160, 103, 103);
+        }
+
+        /* here para is child of div */
+
+        /* DESCENDANT SELECTOR*/
+        div p {
+            color: greenyellow;
+            background-color: pink;
+        }
+        /*UNIVERSAL SELECTOR*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">
+        i am a div
+        <p>i am a para inside div</p>
+    </div>
+    <div class="red">
+        i am a div
+        <article>
+            <p>i am a paragraph inside div</p>
+        </article>
+    </div>
+    <!-- /*here child selector is not applied to para as div has article then article has para ;; here div dont have para it has article but above we gave css to para, not a direct child */ -->
+    <div id="green">
+        heyyy i am another div
+    </div>
+</body>
+
+</html>
