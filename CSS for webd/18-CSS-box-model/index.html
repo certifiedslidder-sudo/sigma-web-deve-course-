@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS box model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: lightseagreen;
+
+        }
+
+        .box1 {
+            color: yellow;
+            padding: 10px;
+            /*inside content area*/
+            margin: 35px;     /*concept of nargin collapse, if the margins are not equal the greater margin will appear instead of adding up of both margins.*/
+            /* outside content area , background of element won't retain. */
+            border: 2px solid blue;
+            height: 200px;
+            /* normal height dont include padding and border*/
+            box-sizing: border-box;
+            /* to include padding and border in height and width therefore content size decreases,but not margin */
+        }
+
+        .box2 {
+            color: red;
+            padding: 10px;
+            /*inside content area*/
+            margin: 25px;
+            /* outside content area , background of element won't retain. */
+            border: 2px solid black;
+            height: 200px;
+            /* normal height dont include padding and border*/
+            box-sizing: border-box;
+            /* to include padding and border in height and width therefore content size decreases,but not margin */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">i am a box </div>
+    <div class="box box2">i am another box </div>
+</body>
+
+</html>
