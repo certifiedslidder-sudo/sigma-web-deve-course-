@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> CSS SELECTORS</title>
     <style>
-        /*element selector*/
+        /*element selector - DRAWBACK - will apply the css to all the div present */
         /*     <!-- div {
             background-color: red;
         }  -->*/
 
-        /*CLASS SELECTOR*/
-        .red { 
-            /* .red means class red  */
+        /*CLASS SELECTOR -*/
+        .red {     
+            /* .red means class in red  */
             background-color: red;
         }
 
-        /*id SELECTOR*/
+        /*ID SELECTOR   -- here #green means id is green */
         #green {
             background-color: green;
         }
@@ -28,36 +28,61 @@
             background-color: rgb(160, 103, 103);
         }
 
-        /* here para is child of div */
+        /* here para is child of div and we are appling css to para */
 
-        /* DESCENDANT SELECTOR*/
+        /* DESCENDANT SELECTOR - dont care about any other element in between div and para , will simply search for a div that contains para and will apply css to it*/
         div p {
             color: greenyellow;
             background-color: pink;
         }
         /*UNIVERSAL SELECTOR*/
         * {
-            margin: 0;
-            padding: 0;
+            margin: 3;
+            padding: 1;
+        }
+        /* PSEUDO - SELECTORS*/
+        a:visited{
+            color: rgb(138, 82, 13);
+        }
+        a:link{
+            color: chartreuse;
+        }
+        a:active{
+            background-color: pink;
+        }
+        div:hover{
+            background-color: cyan;
+        }
+        p:first-child{
+            background-color: aquamarine;
         }
     </style>
 </head>
 
 <body>
+    <main class = "one">
+        <p> i am first</p> 
+        <p>i am second</p>
+    </main>
     <div class="red">
          heyyyyy i am a div
         <p>i am a para inside div</p>
     </div>
+    <br>
     <div class="red">
         i am a div
         <article>
             <p>i am a paragraph inside div</p>
         </article>
     </div>
+    <br>
     <!-- /*here child selector is not applied to para as div has article then article has para ;; here div dont have para it has article but above we gave css to para, not a direct child */ -->
     <div id="green">
-        heyyy i am another div
+          heyyy i am another div
     </div>
+    <br>
+    <a href="https://www.google.com/"> GO TO GOOGLE</a> <br>
+    <a href="http://codewithharry.com"> go to codewithharry</a>
 </body>
 
 </html>

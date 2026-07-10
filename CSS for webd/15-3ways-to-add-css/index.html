@@ -6,19 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Three ways to add CSS to HTML </title>
   <!-- <style>
-      h1{
-        color: yellow;background-color: red;
+      h1{       INTERNAL CSS - NOT A GOOD PRACTICE, we need to apply css to each element
+        color: yellow;
+        background-color: red;
       }
     </style> -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!--EXTERNAL CSS - attaching a file of css , really helpful in bulk edits.
+  link tag adds css file as a stylesheet-->
 </head>
 
 <body>
-  <!--<h1 style="color: yellow;background-color:red;">Three ways to add CSS  to HTML<h1/>-->
+  <!--<h1 style="color: yellow;background-color:red;">Three ways to add CSS  to HTML<h1/>        THIS WAS INLINE CSS, NOT CONSIDERED AS A GOOD PRACTICE-->
   <h1>3 ways to add CSS to HTML</h1>
   <div>
     <ol>
-      <li>Inline CSS</li> <!--here we have to apply css to each element therefore not so efficient in bulk edit.-->
+      <li>Inline CSS</li> <!--here we have to apply css to each element therefore not so efficient in bulk edit, and alsp html file keeps growing long and long-->
       <li>Internal CSS</li>
       <!--here we give css to a heading and whereever that heading is used the css gets applied to it, efficient in bulk edit.-->
       <li>External CSS</li>
@@ -29,6 +31,6 @@
 
 </html>
 <!-- avoid inline CSS rn
- interncal CSS - when the web page is small,when we have to write small css
+ internal CSS - when the web page is small,when we have to write small css
 external CSS - when you are creating a big production grade website.
 -->

@@ -1,6 +1,12 @@
 
       h1{
-        color: yellow;background-color: red;
+        color: yellow;
+        background-color: rgb(118, 217, 235); 
+      }
+      div{
+        color: bisque;
+        background-color: red;
+     
       }
 
 
