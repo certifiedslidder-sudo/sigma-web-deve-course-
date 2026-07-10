@@ -12,13 +12,13 @@
     <form action="post"> <!--get request is simple request  when we have to tell something to server or hit the server with request; post-when we have to send a lot of data (mostly used) -->
         <div>
             <label for="username">Enter your username</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username" autofocus>
+            <input type="text" id="username" name="username" placeholder="username" autofocus>
         </div>
         <div>
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">   <!-- name same therfore only one can be selected at a time.-->
+            <label for="female">Female</label>   <!-- for mai input tag ki id dal do{smoothness}-->
         </div>
         <div>
             <input type="checkbox" id="subscribe" name="subscribe" value="yes">

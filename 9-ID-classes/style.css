@@ -6,6 +6,10 @@ color: red;
     background-color: yellow;
 }
 #firstdiv{
-    /*color: red;
-    background-color: yellow;*/
+   /* color: rgb(200, 208, 209);
+    background-color: rgb(135, 81, 167);*/
+}
+#seconddiv{
+    color: rgb(128, 227, 240);
+    background-color: rgb(148, 9, 11);
 }
